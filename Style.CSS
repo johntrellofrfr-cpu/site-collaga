@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lex Atrium | Практики</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Дополнительные стили для таблицы цен */
+        .pricing-section {
+            margin: 70px 0 50px;
+        }
+
+        .pricing-title {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #f0f5fc;
+        }
+
+        .pricing-subtitle {
+            text-align: center;
+            color: #8a9bb0;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        .price-table-wrapper {
+            overflow-x: auto;
+            border-radius: 24px;
+            background: #0f1219;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Inter', sans-serif;
+            min-width: 600px;
+        }
+
+        .price-table th {
+            text-align: left;
+            padding: 20px 24px;
+            background: #0a0d12;
+            color: #9aaebf;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .price-table td {
+            padding: 18px 24px;
+            color: #e2e8f0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            font-size: 0.95rem;
+        }
+
+        .price-table tr:hover td {
+            background: rgba(154, 174, 191, 0.05);
+        }
+
+        .price-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .price-amount {
+            font-weight: 700;
+            color: #f0f3f7;
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+
+        .price-note {
+            font-size: 0.75rem;
+            color: #6f7b88;
+            margin-top: 4px;
+        }
+
+        .service-name {
+            font-weight: 500;
+        }
+
+        .price-table-footnote {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #6f7b88;
+            margin-top: 20px;
+            padding: 16px;
+            background: #0c0f16;
+            border-radius: 20px;
+        }
+
+        .badge-new {
+            background: rgba(154, 174, 191, 0.15);
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            color: #9aaebf;
+            margin-left: 12px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <div class="nav">
+            <a href="index.html">Главная</a>
+            <a href="practices.html" class="active">Практики</a>
+            <a href="help.html">Получить помощь</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="reviews.html">Отзывы</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="practices-hero">
+        <div class="container">
+            <h1>Юридические практики</h1>
+            <p style="color: #a0aec0; max-width: 680px; margin: 20px auto 0;">Комплексная защита в каждой отрасли права. Без шаблонов — только стратегия.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="practice-block">
+            <span class="practice-number">01</span>
+            <h2 class="practice-title">Арбитражные споры</h2>
+            <p class="practice-desc">Представляем интересы компаний и предпринимателей в арбитражных судах всех инстанций, включая Верховный суд РФ. Банкротство, взыскания, корпоративные конфликты.</p>
+            <div class="stat-badge">
+                <div class="stat-number">87%</div>
+                <div style="color: #8a9bb0;">успешных дел в арбитраже за 2024 год</div>
+            </div>
+        </div>
+
+        <div class="practice-block">
+            <span class="practice-number">02</span>
+            <h2 class="practice-title">Гражданское право</h2>
+            <p class="practice-desc">Защита имущественных и личных неимущественных прав граждан. Споры с застройщиками, наследственные дела, возмещение ущерба.</p>
+            <div class="stat-badge">
+                <div class="stat-number">320+</div>
+                <div style="color: #8a9bb0;">успешно завершённых гражданских дел</div>
+            </div>
+        </div>
+
+        <div class="practice-block">
+            <span class="practice-number">03</span>
+            <h2 class="practice-title">Уголовная защита</h2>
+            <p class="practice-desc">Адвокатская защита на всех стадиях: от задержания до кассации. Экономические преступления, защита бизнеса, выезд 24/7.</p>
+            <div class="stat-badge">
+                <div class="stat-number">100%</div>
+                <div style="color: #8a9bb0;">прекращений дел на стадии следствия (по делам клиентов)</div>
+            </div>
+        </div>
+
+        <div class="practice-block">
+            <span class="practice-number">04</span>
+            <h2 class="practice-title">Семейное право</h2>
+            <p class="practice-desc">Деликатное решение семейных конфликтов. Развод, раздел имущества, алименты, определение места жительства детей.</p>
+            <div class="stat-badge">
+                <div class="stat-number">95%</div>
+                <div style="color: #8a9bb0;">дел завершаются мировым соглашением или победой в суде</div>
+            </div>
+        </div>
+
+        <!-- НОВАЯ ТАБЛИЦА С ПРИМЕРНЫМИ ЦЕНАМИ -->
+        <div class="pricing-section">
+            <h2 class="pricing-title">Примерные цены на услуги</h2>
+            <p class="pricing-subtitle">Окончательная стоимость зависит от сложности дела и объёма работы</p>
+
+            <div class="price-table-wrapper">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Описание</th>
+                            <th>Стоимость</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="service-name">Первичная консультация</td>
+                            <td>Устная консультация, анализ ситуации, рекомендации</td>
+                            <td class="price-amount">Бесплатно</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Письменная консультация (заключение)</td>
+                            <td>Развёрнутое письменное заключение с правовым анализом</td>
+                            <td class="price-amount">от 5 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Составление документов</td>
+                            <td>Иски, жалобы, претензии, договоры, заявления</td>
+                            <td class="price-amount">от 3 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Ведение гражданского дела <span class="badge-new">популярно</span></td>
+                            <td>Полное сопровождение в судах общей юрисдикции</td>
+                            <td class="price-amount">от 40 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Ведение арбитражного дела</td>
+                            <td>Представительство в арбитражном суде (все инстанции)</td>
+                            <td class="price-amount">от 60 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Уголовная защита (стадия следствия)</td>
+                            <td>Выезд адвоката, защита на допросах, обжалование</td>
+                            <td class="price-amount">от 50 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Уголовная защита (суд первой инстанции)</td>
+                            <td>Полное сопровождение в судебном процессе</td>
+                            <td class="price-amount">от 80 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Развод / раздел имущества</td>
+                            <td>Семейные споры, алименты, брачные договоры</td>
+                            <td class="price-amount">от 25 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Банкротство физических лиц</td>
+                            <td>Полное сопровождение процедуры банкротства</td>
+                            <td class="price-amount">от 80 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Абонентское обслуживание (юр. лиц)</td>
+                            <td>Месячное сопровождение бизнеса, договоры, консультации</td>
+                            <td class="price-amount">от 25 000 ₽/мес</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Почасовая оплата</td>
+                            <td>Работа адвоката / юриста без фиксации на весь проект</td>
+                            <td class="price-amount">от 3 500 ₽/час</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="price-table-footnote">
+                ⚡ Цены указаны как ориентировочные. Точная стоимость определяется после анализа вашей ситуации. 
+                Возможна рассрочка и индивидуальные условия для сложных дел.
+            </div>
+        </div>
+        <!-- КОНЕЦ ТАБЛИЦЫ -->
+
+        <div class="nav-buttons">
+            <a href="help.html" class="btn btn-primary">Обсудить вашу ситуацию</a>
+            <a href="index.html" class="btn btn-outline">На главную</a>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 — Адвокатское бюро. Чёткость и справедливость.</p>
+    </div>
+</footer>
+
+</body>
+</html>

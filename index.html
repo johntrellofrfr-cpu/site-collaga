@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lex Atrium | Получить помощь</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #07090c; font-family: 'Inter', sans-serif; color: #eef2f6; line-height: 1.5; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
+        .header { padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,0.05); background-color: rgba(7,9,12,0.96); position: sticky; top: 0; z-index: 100; }
+        .header-inner { display: flex; justify-content: center; }
+        .nav { display: flex; gap: 48px; flex-wrap: wrap; }
+        .nav a { color: #cdd5df; text-decoration: none; font-weight: 500; padding: 6px 0; border-bottom: 1px solid transparent; }
+        .nav a:hover, .nav a.active { color: white; border-bottom-color: rgba(255,255,240,0.5); }
+        .btn { display: inline-block; padding: 14px 32px; border-radius: 44px; font-weight: 600; text-decoration: none; transition: 0.25s; cursor: pointer; border: none; font-family: inherit; }
+        .btn-primary { background-color: #f0f3f7; color: #0a0c0f; }
+        .btn-primary:hover { background-color: white; transform: translateY(-2px); }
+        .btn-outline { border: 1px solid rgba(255,255,255,0.3); color: #e2e8f0; background: transparent; display: inline-block; }
+        .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.03); }
+        .footer { padding: 48px 0 40px; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; color: #6f7b88; font-size: 0.85rem; }
+        input, textarea { width: 100%; padding: 14px; background: #101318; border: 1px solid #2e3a44; border-radius: 40px; margin: 16px 0; font-family: inherit; color: #eef2f6; font-size: 1rem; }
+        textarea { border-radius: 28px; resize: vertical; }
+        input:focus, textarea:focus { outline: none; border-color: #9aaebf; }
+        @media (max-width: 780px) { .nav { gap: 28px; } }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <div class="nav">
+            <a href="index.html">Главная</a>
+            <a href="practices.html">Практики</a>
+            <a href="help.html" class="active">Получить помощь</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="reviews.html">Отзывы</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container" style="max-width: 600px; margin: 80px auto; text-align: center;">
+        <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Получить юридическую помощь</h2>
+        <p style="color: #a5b3c0; margin-bottom: 32px;">Оставьте заявку, и мы свяжемся с вами в ближайшее время для консультации.</p>
+        <form action="#" method="post">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Телефон или Telegram" required>
+            <textarea rows="4" placeholder="Опишите ситуацию кратко"></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 12px;">Отправить заявку</button>
+        </form>
+        <div style="margin-top: 48px;">
+            <a href="index.html" class="btn-outline btn">← Вернуться на главную</a>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 — Адвокатское бюро. Чёткость и справедливость.</p>
+    </div>
+</footer>
+
+</body>
+</html>

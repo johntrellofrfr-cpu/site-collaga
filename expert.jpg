@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Lex Atrium | Юридическая защита — центр притяжения</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <div class="nav">
+            <a href="index.html" class="active">Главная</a>
+            <a href="practices.html">Практики</a>
+            <a href="help.html">Получить помощь</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="reviews.html">Отзывы</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <section class="hero">
+            <div class="badge-center">Юридическая защита без бренда</div>
+            <h1>Ваша правовая опора<br>в монохроме</h1>
+            <p>Чёткие решения, адвокатская тайна и выверенная стратегия. Полный спектр услуг — от первой консультации до победы в суде.</p>
+            <div class="btn-group">
+                <a href="help.html" class="btn btn-primary">Получить консультацию</a>
+                <a href="practices.html" class="btn btn-outline">Изучить практики</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <div class="photo-grid">
+            <figure class="photo-card">
+                <div class="photo-placeholder">
+                    <img src="PICTURES\office.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <figcaption><h4>Современный офис в центре</h4><p>Переговорные, полная конфиденциальность встреч.</p></figcaption>
+            </figure>
+            <figure class="photo-card">
+                <div class="photo-placeholder">
+                    <img src="PICTURES\team.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <figcaption><h4>Команда адвокатов</h4><p>Коллегия с 10+ годами практики.</p></figcaption>
+            </figure>
+            <figure class="photo-card">
+                <div class="photo-placeholder">
+                    <img src="PICTURES\expert.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <figcaption><h4>Юридическая экспертиза</h4><p>Аудит документов, представительство в судах.</p></figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">Ключевые направления</h2>
+            <div class="cards">
+                <div class="card"><h3>Арбитраж</h3><p>Споры юрлиц, ИП, банкротство, взыскания.</p></div>
+                <div class="card"><h3>Гражданские дела</h3><p>Недвижимость, наследство, защита прав.</p></div>
+                <div class="card"><h3>Уголовная защита</h3><p>Адвокат на следствии, в суде.</p></div>
+                <div class="card"><h3>Семейное право</h3><p>Разводы, алименты, раздел имущества.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-detailed">
+            <h2 style="font-size: 1.9rem; margin-bottom: 20px;">Юридическая защита, в которой вы уверены</h2>
+            <p style="color: #b7c3cf; max-width: 860px; margin: 0 auto;">Только чёткая позиция, доказательная база и полное погружение в дело. Более 300 успешно завершённых проектов.</p>
+            <div class="stats">
+                <div class="stat-item"><div class="stat-number">12 лет</div><div>средний опыт</div></div>
+                <div class="stat-item"><div class="stat-number">98%</div><div>положительных решений</div></div>
+                <div class="stat-item"><div class="stat-number">24/7</div><div>оперативная поддержка</div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">Прозрачный процесс</h2>
+            <div class="steps">
+                <div class="step"><strong>01.</strong> Бесплатный анализ ситуации</div>
+                <div class="step"><strong>02.</strong> Фиксация гонорара в договоре</div>
+                <div class="step"><strong>03.</strong> Подготовка позиции, сбор доказательств</div>
+                <div class="step"><strong>04.</strong> Контроль исполнения решения</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 80px;">
+        <div style="background: #0f1218; border-radius: 48px; padding: 48px 40px; text-align: center;">
+            <h3 style="font-size: 1.7rem; margin-bottom: 20px;">Реальные кейсы и результаты</h3>
+            <p style="color: #b7c4d0;">— Возврат коммерческой недвижимости на сумму 120 млн ₽<br>— Прекращение уголовного дела за отсутствием состава преступления</p>
+            <div style="margin-top: 38px;">
+                <a href="help.html" class="btn btn-primary">Нужна помощь? Напишите нам</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>Без логотипа, без бренда — только ваша защита и конфиденциальность.</p>
+        <p style="margin-top: 14px;">© 2025 — Адвокатское бюро. Чёткость и справедливость.</p>
+    </div>
+</footer>
+
+</body>
+</html>
